@@ -1,0 +1,26 @@
+sources:
+#    nextzen:
+#        type: TopoJSON
+#        url: https://tile.nextzen.org/tilezen/vector/v1/all/{z}/{x}/{y}.topojson
+    _moon:
+        type: Raster
+        # url: https://cartocdn-gusc.global.ssl.fastly.net/opmbuilder/api/v1/map/named/opm-moon-basemap-v0-1/all/{z}/{x}/{y}.png
+
+        url: https://s3.amazonaws.com/opmbuilder/301_moon/tiles/w/hillshaded-albedo/{z}/{x}/{y}.png
+        
+#    stamen-terrain:
+#        type: Raster
+#        url: http://a.tile.stamen.com/terrain-background/{z}/{x}/{y}.jpg
+        
+layers:
+    _moon:
+        data: { source: _moon }
+        draw:
+            raster:
+                order: 100
+#    terrain:
+#        enabled: false
+#        data: { source: stamen-terrain }
+#        draw:
+#            raster:
+#                order: 0 # draw on bottom
