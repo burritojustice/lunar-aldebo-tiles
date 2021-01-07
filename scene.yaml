@@ -7,6 +7,7 @@ sources:
         # url: https://cartocdn-gusc.global.ssl.fastly.net/opmbuilder/api/v1/map/named/opm-moon-basemap-v0-1/all/{z}/{x}/{y}.png
 
         url: https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/opmbuilder/301_moon/tiles/w/hillshaded-albedo/{z}/{x}/{y}.png
+        tms: true
         
 #    stamen-terrain:
 #        type: Raster
